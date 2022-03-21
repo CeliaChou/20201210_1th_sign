@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif !important;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto 0px auto;
+    width: 100%;
+    min-width: 1400px;
+    color: #fceed5;
+    background-color: #1d2b3d;
+}
+
+.part0 {
+    position: relative;
+    width: 100%;
+    height: 1282px;
+    overflow: hidden;
+}
+
+.webp .part0bg {
+    background-image: url(../imgp/part0bg.webp);
+}
+
+.no-webp .part0bg {
+    background-image: url(../img/part0bg.png);
+}
+
+.part0bg {
+    height: 1104px;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+    background-size: cover;
+    top: 0px;
+    display: none;
+}
+
+.fireworksbox {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 1104px;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    display: block;
+}
+
+.webp .main {
+    background-image: url(../imgp/main.webp);
+}
+
+.no-webp .main {
+    background-image: url(../img/main.png);
+}
+
+.main {
+    height: 1282px;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+    background-size: cover;
+    top: 80px;
+}
+
+.mainBTN {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    top: 1000px;
+    padding: 0 15px;
+}
+
+.main a {
+    display: block;
+}
+
+.webp .mainBtn1 {
+    background-image: url(../imgp/mainBTN1.webp);
+}
+
+.no-webp .mainBtn1 {
+    background-image: url(../img/mainBTN1.png);
+}
+
+.mainBtn1 {
+    height: 96px;
+    width: 372px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.webp .mainBtn2 {
+    background-image: url(../imgp/mainBTN2.webp);
+}
+
+.no-webp .mainBtn2 {
+    background-image: url(../img/mainBTN2.png);
+}
+
+.mainBtn2 {
+    height: 96px;
+    width: 372px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.webp .mainBtn3 {
+    background-image: url(../imgp/mainBTN3.webp);
+}
+
+.no-webp .mainBtn3 {
+    background-image: url(../img/mainBTN3.png);
+}
+
+.mainBtn3 {
+    height: 96px;
+    width: 372px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.icon {
+    float: right;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.icon_YBF {
+    margin: 15px 10px;
+    cursor: pointer;
+}
+
+.icon_Btn {
+    width: 60px;
+    height: 30px;
+    color: #16293f;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon_Btn:hover {
+    color: #16293f;
+    background-color: #ffebc1;
+    transition: 0.3s linear;
+}
+
+.account {
+    width: 250px;
+    height: 30px;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1px solid white;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.accountBox {
+    width: 310px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 15px 10px;
+}
+
+.login {
+    width: 60px;
+    height: 30px;
+    color: #16293f;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    margin: 15px 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.login:hover {
+    color: #16293f;
+    background-color: #ffebc1;
+    transition: 0.3s linear;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+
+/* --------------------------part1------------------------------ */
+
+.webp .part1 {
+    background-image: url(../imgp/part1bg.webp);
+}
+
+.no-webp .part1 {
+    background-image: url(../img/part1bg.png);
+}
+
+.part1 {
+    height: 2042px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 2;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 10px rgba(7, 14, 24, .8);
+    text-align: center;
+}
+
+.text {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.webp .h1 {
+    background-image: url(../imgp/h1.webp);
+}
+
+.no-webp .h1 {
+    background-image: url(../img/h1.png);
+}
+
+.h1 {
+    height: 20px;
+    width: 548px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    background-size: cover;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 6px;
+    color: #f4ddab;
+    margin: 145px auto 40px auto;
+    line-height: 0.3;
+}
+
+.h2 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #ecbb54;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.content li {
+    text-align: left;
+}
+
+.signing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px auto 0 auto;
+}
+
+.webp .signbox1 {
+    background-image: url(../imgp/SignBox1.webp);
+}
+
+.no-webp .signbox1 {
+    background-image: url(../img/SignBox1.png);
+}
+
+.signbox1 {
+    height: 333px;
+    width: 242px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+.webp .signbox2 {
+    background-image: url(../imgp/SignBox2.webp);
+}
+
+.no-webp .signbox2 {
+    background-image: url(../img/SignBox2.png);
+}
+
+.signbox2 {
+    height: 333px;
+    width: 242px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+.date {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #412b14;
+    margin: 5px auto 75px auto;
+}
+
+.flexsignbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+    width: 215px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.signBtn {
+    width: 165px;
+    height: 60px;
+    background: linear-gradient(90deg, #e4cea3, #fff3dc);
+    border: 2px solid;
+    border-image-source: linear-gradient(-90deg, #e4cea3, #fff3dc);
+    border-image-slice: 1;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 400;
+    color: #412b14;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.alreadysign {
+    width: 165px;
+    height: 60px;
+    background: linear-gradient(90deg, #838c93, #5b6366);
+    border: 2px solid;
+    border-image-source: linear-gradient(-90deg, #838c93, #5b6366);
+    border-image-slice: 1;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.reward_content {
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 1.7;
+    color: #fdd581;
+    padding-top: 35px;
+}
+
+.reward_Btn {
+    width: 105px;
+    height: 40px;
+    background: linear-gradient(90deg, #838c93, #5b6366);
+    border: 2px solid;
+    border-image-source: linear-gradient(-90deg, #838c93, #5b6366);
+    border-image-slice: 1;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #9aabbc;
+}
+
+.can_click {
+    width: 105px;
+    height: 40px;
+    background: linear-gradient(90deg, #e4cea3, #fff3dc);
+    border: 2px solid;
+    border-image-source: linear-gradient(-90deg, #e4cea3, #fff3dc);
+    border-image-slice: 1;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #412b14;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.allsign {
+    height: 250px;
+    width: 1280px;
+    z-index: 3;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+    border: 5px solid;
+    border-image-source: linear-gradient(-35deg, #7683d9, #d8a0fe);
+    border-image-slice: 1;
+}
+
+.allsign_h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #fdd581;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 15px 0px 0px 25px;
+}
+
+.light {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: 0 auto;
+    width: 1260px;
+}
+
+.webp .allsign_unsign {
+    background-image: url(../imgp/nolight.webp);
+}
+
+.no-webp .allsign_unsign {
+    background-image: url(../img/nolight.png);
+}
+
+.allsign_unsign {
+    height: 115px;
+    width: 71px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.allsign_unsign p {
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 65px;
+}
+
+.light_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.allsign button {
+    margin: 40px -20px;
+    cursor: pointer;
+}
+
+
+/* -----------------------pop---------------------------------- */
+
+.blacklayer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 99;
+    top: 0;
+}
+
+.blacklayer2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+
+.webp .popclose {
+    background-image: url(../imgp/close.webp);
+}
+
+.no-webp .popclose {
+    background-image: url(../img/close.png);
+}
+
+.popclose {
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    top: 315px;
+    left: 1185px;
+    cursor: pointer;
+}
+
+.popbg {
+    width: 570px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(70deg, #7683d9, #d8a0fe);
+    box-sizing: border-box;
+    border: 2px solid #b67dd5;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.select {
+    border: 0px;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    padding-left: 20px;
+    background-color: #16293f;
+    color: white;
+}
+
+.select2-2 {
+    border: 0px;
+    width: 330px;
+    height: 50px;
+    font-size: 24px;
+    padding-left: 20px;
+    background-color: #16293f;
+    color: white;
+}
+
+.pop_content {
+    font-size: 28px;
+    font-weight: 400;
+    color: #16293f;
+}
+
+.pop_Btn {
+    width: 105px;
+    height: 40px;
+    background: linear-gradient(90deg, #838c93, #5b6366);
+    border: 2px solid;
+    border-image-source: linear-gradient(-90deg, #838c93, #5b6366);
+    border-image-slice: 1;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #9aabbc;
+    letter-spacing: 3px;
+    padding-top: 5px;
+}
+
+.pop_Btn_get {
+    width: 105px;
+    height: 40px;
+    background: linear-gradient(90deg, #e4cea3, #fff3dc);
+    border: 2px solid;
+    border-image-source: linear-gradient(-90deg, #e4cea3, #fff3dc);
+    border-image-slice: 1;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #412b14;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+
+/* -----------------------part2-------------------------------- */
+
+.webp .part2 {
+    background-image: url(../imgp/part2bg.webp);
+}
+
+.no-webp .part2 {
+    background-image: url(../img/part2bg.png);
+}
+
+.part2 {
+    height: 1414px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    background-size: cover;
+    text-align: center;
+}
+
+.webp .liveBTN {
+    background-image: url(../imgp/liveBTN.webp);
+}
+
+.no-webp .liveBTN {
+    background-image: url(../img/liveBTN.png);
+}
+
+.liveBTN {
+    height: 61px;
+    width: 374px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-size: cover;
+    text-align: center;
+    color: #412b14;
+    letter-spacing: 3px;
+    margin: 25px auto 15px auto;
+    line-height: 2.4;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.webp .top {
+    background-image: url(../imgp/TOP.webp);
+}
+
+.no-webp .top {
+    background-image: url(../img/TOP.png);
+}
+
+.top {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.part2 a {
+    display: block;
+}
+
+
+/*-------------------------------footer-----------------------------------*/
+
+.footer {
+    position: relative;
+    background-color: rgba(11, 24, 41, 100);
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+    z-index: 1;
+    /*min-width: 1000px;*/
+}
+
+.footer .footerwrap {
+    width: 1000px;
+    padding: 20px 0;
+    margin: 0 auto;
+    color: rgba(233, 237, 242, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.webp .digeam {
+    background: url('../imgp/digeamlogo.webp');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 133px;
+    height: 32px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.webp .joymax {
+    background: url('../imgp/joymax.webp');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 31px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.no-webp .digeam {
+    background: url('../img/digeamlogo.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 133px;
+    height: 32px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.no-webp .joymax {
+    background: url('../img/joymax.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 31px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.DGcopy a {
+    color: #e5be7b;
+}
+
+.DGcopy a:hover {
+    color: #fff;
+}
+
+.grade {
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grade>ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.silkroad_logo_RWD {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    display: none;
+}
+
+.rwdsidebar {
+    display: none;
+    position: fixed;
+    top: 40%;
+    right: -500px;
+    width: 500px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    padding: 10px;
+}
+
+.rwdsidebar>.line {
+    font-size: 50px;
+    font-weight: bold;
+    color: #dcbc6a;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcbc6a;
+}
+
+.rwdsidebar_openbtn {
+    position: absolute;
+    right: 520px;
+    top: 30px;
+    background-color: #ff9c00;
+    text-align: center;
+    display: inline;
+    padding: 30px;
+}
+
+.rwdsidebar_openbtn p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+}
+
+.rwdsidebar_closebtn {
+    position: absolute;
+    display: none;
+    right: 520px;
+    top: 30px;
+    background-color: #ff9c00;
+    text-align: center;
+    display: inline;
+    padding: 30px;
+}
+
+.rwdsidebar_closebtn p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+}
+
+.rwd_sidebar_link_area {
+    display: flex;
+    margin: 50px 0px 50px 80px;
+}
+
+.rwd_sidebar_link_area a {
+    display: inline-block;
+    margin: 30px 10px 30px 10px;
+}
